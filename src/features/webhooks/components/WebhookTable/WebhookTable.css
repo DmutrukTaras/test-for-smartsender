@@ -1,0 +1,111 @@
+.webhook-table-container {
+  width: 100%;
+  overflow-x: auto;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.webhook-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+
+.webhook-table__head {
+  background-color: var(--color-surface-hover);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.webhook-table__th {
+  padding: 12px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.webhook-table__th--actions {
+  text-align: right;
+}
+
+.webhook-table__row {
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color var(--transition-fast);
+}
+
+.webhook-table__row:last-child {
+  border-bottom: none;
+}
+
+.webhook-table__row:hover:not(.webhook-table__row--head) {
+  background-color: var(--color-surface-hover);
+}
+
+.webhook-table__cell {
+  padding: 14px 16px;
+  vertical-align: middle;
+  color: var(--color-text-primary);
+}
+
+.webhook-table__cell--actions {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.webhook-table__name-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.webhook-table__name {
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.webhook-table__id {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.webhook-table__url-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 320px;
+  color: var(--color-primary);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.webhook-table__url-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.webhook-table__url-icon {
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.webhook-table__url-link:hover {
+  text-decoration: underline;
+}
+
+.webhook-table__date {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.webhook-table__edit-btn {
+  display: inline-flex;
+}

@@ -1,0 +1,224 @@
+.webhooks-view {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+}
+
+.webhooks-view__navbar {
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.webhooks-view__navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.webhooks-view__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.webhooks-view__brand-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.webhooks-view__brand-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+}
+
+.webhooks-view__brand-badge {
+  font-size: 11px;
+  font-weight: 600;
+  background-color: var(--color-primary);
+  color: var(--color-text-inverted);
+  padding: 2px 6px;
+  border-radius: var(--radius-full);
+}
+
+.webhooks-view__user-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.webhooks-view__user-info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.webhooks-view__user-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+}
+
+.webhooks-view__user-email {
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.webhooks-view__content {
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 24px 48px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.webhooks-view__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.webhooks-view__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 4px;
+}
+
+.webhooks-view__subtitle {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.webhooks-view__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.webhooks-view__refreshing-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.webhooks-view__spin-icon {
+  animation: rotate-refresh 1s linear infinite;
+}
+
+.webhooks-view__status-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px;
+  gap: 16px;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.webhooks-view__status-text {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.webhooks-view__error-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background-color: var(--color-danger-bg);
+  border: 1px solid var(--color-danger-border);
+  border-radius: var(--radius-lg);
+}
+
+.webhooks-view__error-icon {
+  color: var(--color-danger);
+  flex-shrink: 0;
+}
+
+.webhooks-view__error-content {
+  flex: 1;
+}
+
+.webhooks-view__error-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-danger-text);
+  margin-bottom: 2px;
+}
+
+.webhooks-view__error-desc {
+  font-size: 13px;
+  color: var(--color-danger-text);
+  opacity: 0.9;
+}
+
+.webhooks-view__empty-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 24px;
+  text-align: center;
+  gap: 12px;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.webhooks-view__empty-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--color-surface-hover);
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.webhooks-view__empty-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.webhooks-view__empty-desc {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  max-width: 360px;
+  margin-bottom: 8px;
+}
+
+@keyframes rotate-refresh {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,108 @@
+.login-view {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-color: var(--color-bg);
+}
+
+.login-view__card {
+  width: 100%;
+  max-width: 420px;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-border);
+  padding: 36px 32px;
+}
+
+.login-view__header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.login-view__icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px auto;
+}
+
+.login-view__title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 6px;
+}
+
+.login-view__subtitle {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.login-view__alert {
+  background-color: var(--color-danger-bg);
+  border: 1px solid var(--color-danger-border);
+  color: var(--color-danger-text);
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.login-view__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-view__submit-btn {
+  width: 100%;
+  margin-top: 6px;
+}
+
+.login-view__test-info {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px dashed var(--color-border);
+  font-size: 13px;
+  background-color: var(--color-surface-hover);
+  padding: 14px;
+  border-radius: var(--radius-md);
+}
+
+.login-view__test-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin-bottom: 8px;
+}
+
+.login-view__test-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--color-text-secondary);
+  margin-bottom: 10px;
+}
+
+.login-view__test-details code {
+  font-family: var(--font-mono);
+  background-color: var(--color-surface);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  font-size: 12px;
+}
+
+.login-view__autofill-btn {
+  width: 100%;
+}

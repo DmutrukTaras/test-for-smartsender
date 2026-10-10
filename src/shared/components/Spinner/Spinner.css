@@ -1,0 +1,49 @@
+.spinner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner__circle {
+  border: 2px solid var(--color-border);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spinner-rotate 0.7s linear infinite;
+}
+
+.spinner__sr-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Modifiers */
+.spinner--sm .spinner__circle {
+  width: 16px;
+  height: 16px;
+  border-width: 2px;
+}
+
+.spinner--md .spinner__circle {
+  width: 28px;
+  height: 28px;
+  border-width: 3px;
+}
+
+.spinner--lg .spinner__circle {
+  width: 44px;
+  height: 44px;
+  border-width: 4px;
+}
+
+@keyframes spinner-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
